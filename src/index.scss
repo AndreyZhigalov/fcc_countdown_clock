@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  color: rgb(28, 28, 28);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+}
+
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .background {
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    width: 100%;
+    min-width: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .strap {
+      z-index: 1;
+      position: absolute;
+      height: 100%;
+      width: 150px;
+      background: rgb(240, 240, 240);
+      border-radius: 30px;
+      box-shadow: 20px 20px 20px rgb(66, 123, 109);
+      background: repeating-linear-gradient(
+        rgb(230, 230, 230) 0px,
+        rgba(250, 250, 250, 1) 20px,
+        rgba(250, 250, 250, 1) 40px,
+        rgb(230, 230, 230) 50px,
+        rgb(180, 180, 180) 67px
+      );
+    }
+    .bodyBG {
+      position: absolute;
+      box-shadow: 20px 20px 20px rgb(66, 123, 109);
+      width: 80%;
+      height: 220px;
+      border-radius: 30%;
+    }
+    #break-label,
+    #session-label {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+      width: 30px;
+      height: 120px;
+      #break-decrement,
+      #break-increment,
+      #session-decrement,
+      #session-increment {
+        position: relative;
+        left: 5px;
+        border-radius: 15px 0 0 15px;
+        width: 30px;
+        height: 40px;
+        border: none;
+        background: repeating-linear-gradient(
+          rgb(230, 230, 230) 0px,
+          rgba(250, 250, 250, 1) 10px,
+          rgba(250, 250, 250, 1) 20px,
+          rgb(230, 230, 230) 35px,
+          rgb(180, 180, 180) 40px
+        );
+        box-shadow: 10px 10px 20px rgb(66, 123, 109);
+      }
+      #session-decrement,
+      #session-increment {
+        left: -5px;
+        width: 30px;
+        height: 40px;
+        border-radius: 0 15px 15px 0;
+      }
+      #break-decrement {
+      }
+      #break-length,
+      #session-length {
+        z-index: 2;
+        font-size: 30px;
+        color: rgb(230, 230, 230);
+      }
+    }
+
+    .display {
+      z-index: 2;
+      width: 100%;
+      height: 220px;
+      border-radius: 30%;
+      border: 4px solid rgb(209, 209, 209);
+      background: repeating-linear-gradient(
+        rgb(244, 244, 244) 0%,
+        rgb(230, 230, 230) 5%,
+        rgba(250, 250, 250, 1) 20%,
+        rgba(250, 250, 250, 1) 80%,
+        rgb(230, 230, 230) 95%,
+        rgb(244, 244, 244) 100%
+      );
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      #timer-label {
+        font-size: 25px;
+        margin: 0%;
+      }
+      #time-left {
+        width: 100%;
+        height: 120px;
+        border-radius: 20px;
+        background-color: rgb(103, 91, 68);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+        color: rgb(230, 230, 230);
+      }
+      .timer_control {
+        #start_stop,
+        #reset {
+          font-size: 25px;
+          background-color: transparent;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+  }
+  #beep {
+  }
+}
