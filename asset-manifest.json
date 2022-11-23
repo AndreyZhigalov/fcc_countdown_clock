@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/fcc_countdown_clock/static/css/main.61077775.css",
+    "main.js": "/fcc_countdown_clock/static/js/main.014b763b.js",
+    "static/media/alarm.mp3": "/fcc_countdown_clock/static/media/alarm.e33a763e8ebea5910317.mp3",
+    "index.html": "/fcc_countdown_clock/index.html",
+    "main.61077775.css.map": "/fcc_countdown_clock/static/css/main.61077775.css.map",
+    "main.014b763b.js.map": "/fcc_countdown_clock/static/js/main.014b763b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61077775.css",
+    "static/js/main.014b763b.js"
+  ]
+}
